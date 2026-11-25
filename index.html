@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Question Answering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">AI<span>DOC</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#upload">Upload Document</a>
+            <a href="#about">About</a>
+        </nav>
+        <div class="status">● System Online</div>
+    </header>
+
+    <main id="home">
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">ARTIFICIAL INTELLIGENCE PROJECT</span>
+                <h1>Ask Questions.<br>
+                    Get <span>Smart Answers.</span>
+                </h1>
+                <p>
+                    Upload your document and get instant answers
+                    using an intelligent Knowledge Base and
+                    rule-based information retrieval.
+                </p>
+                <a href="#upload" class="primary-btn">
+                    Get Started →
+                </a>
+
+            </div>
+
+            <div class="hero-card">
+                <div class="brain">✦</div>
+                <h3>AI Document Assistant</h3>
+                <p>Your documents. Your questions. Instant answers.</p>
+                <div class="mini-status">Knowledge Base Ready</div>
+            </div>
+        </section>
+
+        <section class="workspace" id="upload">
+
+            <div class="section-heading">
+                <span class="tag">YOUR WORKSPACE</span>
+                <h2>Document Assistant</h2>
+                <p>Upload a document to begin asking questions.</p>
+            </div>
+
+            <div class="dashboard">
+
+                <div class="panel upload-panel">
+                    <h3>📄 Upload Document</h3>
+                    <p>Select a text file from your computer.</p>
+
+                    <label for="fileInput" class="upload-box">
+                        <div class="upload-icon">↑</div>
+                        <h4>Click to upload</h4>
+                        <p>Only .txt files supported</p>
+                    </label>
+
+                    <input type="file" id="fileInput"
+                           accept=".txt">
+
+                    <div id="fileName" class="file-name">
+                        No document selected
+                    </div>
+
+                    <div class="document-preview">
+                        <h4>Document Preview</h4>
+                        <div id="documentText">
+                            Your document content will appear here.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel question-panel">
+                    <h3>💬 Ask a Question</h3>
+                    <p>Enter a question related to your document.</p>
+
+                    <textarea id="questionInput"
+                        placeholder="Example: What is Artificial Intelligence?">
+                    </textarea>
+
+                    <button id="askButton" class="primary-btn">
+                        Find Answer →
+                    </button>
+
+                    <div class="answer-box">
+                        <h4>AI Generated Answer</h4>
+                        <div id="answer">
+                            Your answer will appear here.
+                        </div>
+                    </div>
+
+                    <div class="answer-info">
+                        <span>● Rule-Based Retrieval</span>
+                        <span id="answerStatus">Waiting for question</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <h3 id="wordCount">0</h3>
+                    <p>Words Processed</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="sentenceCount">0</h3>
+                    <p>Knowledge Entries</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="questionCount">0</h3>
+                    <p>Questions Asked</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <span class="tag">HOW IT WORKS</span>
+            <h2>Simple. Smart. Efficient.</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <h3>01</h3>
+                    <h4>Document Processing</h4>
+                    <p>Upload and extract text from a document.</p>
+                </div>
+
+                <div class="step">
+                    <h3>02</h3>
+                    <h4>Knowledge Base</h4>
+                    <p>Store document sentences for information retrieval.</p>
+                </div>
+
+                <div class="step">
+                    <h3>03</h3>
+                    <h4>Question Processing</h4>
+                    <p>Match question keywords with stored information.</p>
+                </div>
+
+                <div class="step">
+                    <h3>04</h3>
+                    <h4>Answer Generation</h4>
+                    <p>Display the most relevant matching information.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>AI DOC</h3>
+        <p>AI-Based Document Question Answering System</p>
+        <p>Artificial Intelligence Academic Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
